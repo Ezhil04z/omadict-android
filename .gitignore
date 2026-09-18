@@ -5,6 +5,7 @@ android/build/
 android/.gradle/
 android/captures/
 *.apk
+!OMADICT-debug.apk
 !android/app/build/outputs/apk/**/app-debug.apk
 capacitor-cordova-android-plugins/build/
 android/local.properties
