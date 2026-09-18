@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="application-name" content="OMADICT">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c1512">
+  <meta name="color-scheme" content="dark">
+  <title>OMADICT</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="navbar" class="nav-wrap">
+      <button id="btn-home" class="nav-arrow" type="button" title="home">&#127968;</button>
+      <button id="btn-back" class="nav-arrow" type="button" title="back" disabled>&lt;</button>
+      <div id="chips" class="chips"></div>
+      <button id="btn-fwd" class="nav-arrow" type="button" title="forward" disabled>&gt;</button>
+      <button id="btn-menu" class="nav-arrow" type="button" title="menu" aria-expanded="false">&#9776;</button>
+    </header>
+
+    <div id="menu-panel" class="menu-panel" hidden>
+      <button id="mi-themes" class="menu-item" type="button">Themes</button>
+      <button id="mi-hist" class="menu-item" type="button">Search History</button>
+      <button id="mi-fav" class="menu-item" type="button">Saved Words</button>
+      <button id="mi-about" class="menu-item" type="button">About</button>
+    </div>
+
+    <main id="area">
+
+      <section id="home-view" class="view">
+        <div class="home-col">
+          <pre class="ascii" aria-label="OMADICT logo">
+ ▄██████▄    ▄▄▄▄███▄▄▄▄      ▄████████ ████████▄   ▄█   ▄████████     ███     
+███    ███ ▄██▀▀▀███▀▀▀██▄   ███    ███ ███   ▀███ ███  ███    ███ ▀█████████▄ 
+███    ███ ███   ███   ███   ███    ███ ███    ███ ███▌ ███    █▀     ▀███▀▀██ 
+███    ███ ███   ███   ███ ▀███████████ ███    ███ ███▌ ███            ███   ▀ 
+███    ███ ███   ███   ███   ███    ███ ███    ███ ███▌ ███            ███     
+███    ███ ███   ███   ███   ███    ███ ███    ███ ███  ███    █▄      ███     
+███    ███ ███   ███   ███   ███    ███ ███   ▄███ ███  ███    ███     ███     
+ ▀██████▀   ▀█   ███   █▀    ███    █▀  ████████▀  █▀   ████████▀     ▄████▀   
+          </pre>
+          <div class="ascii-sub">dictionary for omarchy</div>
+
+          <div id="home-bar" class="searchbar"></div>
+
+          <div class="home-panel">
+            <div class="hp-block">
+              <div class="home-sec">WORD OF THE DAY</div>
+              <button id="wotd-word" class="wotd-word" type="button">&nbsp;</button>
+            </div>
+            <div class="hp-block">
+              <div class="home-sec">RANDOM WORD</div>
+              <button id="btn-random" class="home-cta" type="button">Generate</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="res-view" class="view" hidden>
+        <div id="res-tools" class="res-tools">
+          <button id="btn-res-search" class="nav-arrow icon-btn" type="button" title="search this word" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <line x1="15.8" y1="15.8" x2="21" y2="21" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+        <div id="res-bar" class="searchbar" hidden></div>
+        <div id="content" class="content"></div>
+      </section>
+
+      <section id="hist-page" class="view page-view" hidden>
+        <div class="page-wrap"><div class="section-title">SEARCH HISTORY</div></div>
+        <div id="hist-chips" class="content list-chips"></div>
+        <div id="hist-none" class="none" hidden>no searches yet</div>
+      </section>
+
+      <section id="fav-page" class="view page-view" hidden>
+        <div class="page-wrap"><div class="section-title">SAVED WORDS</div></div>
+        <div id="fav-chips" class="content list-chips"></div>
+        <div id="fav-none" class="none" hidden>no saved words yet</div>
+      </section>
+
+      <section id="themes-page" class="view page-view" hidden>
+        <div class="page-wrap"><div class="section-title">THEMES</div></div>
+        <div id="themes-list" class="content themes-list"></div>
+      </section>
+
+      <section id="about-page" class="view page-view" hidden>
+        <div class="page-wrap"><div class="section-title">ABOUT</div></div>
+        <div class="content about-content">
+          <div class="about-title">OMADICT</div>
+          <div class="about-made">Made by ezy04</div>
+          <p class="about-p">OMADICT is a simple dictionary app designed with a pixel/terminal-inspired interface.</p>
+          <p class="about-p">Search words, explore definitions, pronunciation, examples, synonyms, antonyms, and other word information in one place.</p>
+          <p class="about-p">Built for a clean, fast, and simple dictionary experience.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/dict-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

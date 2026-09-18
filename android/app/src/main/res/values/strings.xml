@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">OMADICT</string>
+    <string name="title_activity_main">OMADICT</string>
+    <string name="package_name">com.omadict.app</string>
+    <string name="custom_url_scheme">com.omadict.app</string>
+</resources>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect x="0" y="0" width="1024" height="1024" fill="#0c1512"/>
+  <rect x="140" y="140" width="744" height="744" rx="150" fill="#111c18" stroke="#23372b" stroke-width="14"/>
+  <rect x="196" y="196" width="632" height="632" rx="96" fill="none" stroke="#32473b" stroke-width="5"/>
+  <text x="512" y="430" text-anchor="middle" font-family="JetBrainsMonoNerdFont-Bold, DejaVu Sans Mono, monospace" font-size="42" letter-spacing="3" fill="#53685b">dictionary for omarchy</text>
+  <text x="512" y="672" text-anchor="middle" font-family="JetBrainsMonoNerdFont-Bold, DejaVu Sans Mono, monospace" font-size="160" letter-spacing="6" font-weight="bold" fill="#c1c497">
+    <tspan fill="#509475">O</tspan><tspan>MADICT</tspan>
+  </text>
+  <rect x="478" y="722" width="68" height="28" fill="#2dd5b7"/>
+</svg>

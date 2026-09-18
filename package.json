@@ -1,0 +1,21 @@
+{
+  "name": "omadict-android",
+  "version": "1.0.0",
+  "description": "OMADICT - a dictionary app for Omarchy, packaged as an Android app with Capacitor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "sync": "npm run build && cap sync android",
+    "apk": "bash scripts/rebuild-apk.sh"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  },
+  "dependencies": {
+    "@capacitor-community/text-to-speech": "^6.1.0",
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  }
+}

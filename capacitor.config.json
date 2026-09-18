@@ -1,0 +1,24 @@
+{
+  "appId": "com.omadict.app",
+  "appName": "OMADICT",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "backgroundColor": "#0c1512",
+  "android": {
+    "backgroundColor": "#0c1512",
+    "allowMixedContent": false,
+    "adjustMarginsForEdgeToEdge": "force"
+  },
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "launchAutoHide": true,
+      "backgroundColor": "#0c1512",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    }
+  }
+}
